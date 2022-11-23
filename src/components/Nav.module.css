@@ -1,0 +1,32 @@
+.nav {
+    height: 80px;
+    background-color: rgb(69, 27, 80);
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__a {
+    line-height: 80px;
+    color: rgb(255, 106, 0);
+    font-weight: 500;
+
+}
+
+.nav__a:hover {
+    color: rgb(247, 224, 52);
+}
+
+.nav__a:active {
+    animation: flash 2s linear 2;
+}
+
+
+/* 
+@keyframes {
+    flash {
+        0%: rgb(247, 224, 52),
+        50%: rgb(69, 27, 80),
+        100%: rgb(247, 224, 52),
+    }
+} */

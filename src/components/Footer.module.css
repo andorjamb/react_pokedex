@@ -1,0 +1,9 @@
+.footer {
+    box-sizing: border-box;
+    height: 200px;
+    width: 100vw;
+    background-color: rgb(33, 12, 53);
+    color: white;
+    padding: 1rem;
+    
+}
