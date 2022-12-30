@@ -1,7 +1,9 @@
 .main {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    min-height: 60vh;
+    width: 100vw;
+    margin: auto;
+    margin-top: 0;
+    min-height: 80vh;
+    padding: 1rem;
+    background-color: var(--main-background-color);
 
 }

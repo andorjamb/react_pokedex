@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Home.modules.css';
+import classes from './Home.module.css';
 
 const Home = () => {
     return (

@@ -4,7 +4,7 @@ import classes from './Footer.module.css';
 const Footer = () => {
     return (
         <footer className={classes.footer}>
-            Footer
+            (c) Business College Helsinki 2022
         </footer>
     );
 };

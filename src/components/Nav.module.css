@@ -1,8 +1,15 @@
+/*BEM style*/
+
 .nav {
-    height: 80px;
-    background-color: rgb(69, 27, 80);
+    height: 120px;
+    background-color: rgb(33, 12, 53);
     margin: 0;
+}
+
+.nav__flex {
     display: flex;
+    height: 100%;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -10,6 +17,7 @@
     line-height: 80px;
     color: rgb(255, 106, 0);
     font-weight: 500;
+    font-size: 2rem;
 
 }
 

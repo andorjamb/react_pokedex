@@ -8,8 +8,7 @@ const Header = () => {
     return (
         <header className={classes.header}>
 
-            <Link to='/'><h1 className={classes.h1}>Pokedex</h1>
-            </Link >
+            <div className={classes.title}><Link to='/'><h1 className={classes.h1}>Pokedex</h1></Link ></div>
             <Nav />
         </header>
     );

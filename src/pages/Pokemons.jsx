@@ -16,7 +16,7 @@ class Pokemons extends Component {
         fetch('https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0')
             .then((res) => res.json())
             .then((data) => {
-                const fetches = data.results.map(p => {
+                const fetches = data.results.map((p) => {
                     return fetch(p.url)
                         .then(res => res.json());
                 })
@@ -39,7 +39,7 @@ class Pokemons extends Component {
                 {this.state.data.map((card) => (<Card
                     name={card.name}
                     key={card.name}
-                    image={card.sprites.other['official-artwork']} />))
+                    image={card.sprites.other['official-artwork'].front_default} />))
                 }
             </div>
         );

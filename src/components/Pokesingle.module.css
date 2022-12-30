@@ -1,0 +1,28 @@
+.pokesingle {
+    display: flex;
+    align-items: center;
+    background-color: var(--eggplant);
+
+}
+
+.pokesingleImg {
+    flex: 50%;
+    height: 60vh;
+
+}
+
+.info {
+    flex: 50%;
+    height: 60vh;
+    box-shadow: 0 0 3px darkgray;
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+
+h3 {
+    margin: 0.3rem, 0;
+}
+
+a {
+    color: orange;
+}
