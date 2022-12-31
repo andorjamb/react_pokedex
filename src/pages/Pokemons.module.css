@@ -3,5 +3,8 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-gap: 1rem;
-    background-color:var(--main-background-color);
+    background-color: var(--main-background-color);
+    padding: 1rem;
+    max-width: 80vw;
+    margin: auto;
 }

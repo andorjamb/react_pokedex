@@ -23,7 +23,6 @@ class Pokemons extends Component {
 
                 Promise.all(fetches).then(res => this.setState({ data: res, isLoading: false }))
 
-
                 /* this.setState({ data: data.results, isLoading: false })
                 console.log(this.state.data); */
             });
@@ -31,7 +30,7 @@ class Pokemons extends Component {
 
     render() {
         if (this.state.isLoading) {
-            return <p>Loading....</p>
+            return <p className="loading">Loading....</p>
         }
 
         return (
