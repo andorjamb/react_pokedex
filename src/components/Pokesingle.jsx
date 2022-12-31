@@ -10,31 +10,15 @@ const Pokesingle = () => {
     const params = useParams();
 
     useEffect(() => {
-
-        setIsLoading(true);
-        console.log(params.pokesingle);
-        const data = fetch(`https://pokeapi.co/api/v2/pokemon/${params.pokesingle}`)
+        fetch(`https://pokeapi.co/api/v2/pokemon/${params.pokesingle}`)
             .then(res => res.json())
-            .then((data) => { console.log(data.name) })
+            .then((data) => { setData(data); setIsLoading(false) })
+        /*  .then((data) => { if (data != null) {  } }); */
 
-        setData(data);
-        setIsLoading(false);
-    
+
+
 
     }, []);
-
-    /*     fetch('https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0')
-            .then((res) => res.json())
-            .then((data) => {
-                data.results.forEach((p) => {
-                    if (p.name === this.params.pokesingle) {
-                        return fetch(p.url)
-                            .then(res => res.json());
-                    }
-                })
-            }) */
-
-
 
     return (
         isLoading ?
@@ -42,7 +26,7 @@ const Pokesingle = () => {
 
             :
             <div className={classes.pokesingle}>
-                <div className={classes.pokesingleImg}> {/* <img src={data.sprites.other['offical-artwork'].front_default} alt={data.name}></img> */} </div>
+                <div className={classes.pokesingleImg}> <img src={data.sprites.other['official-artwork'].front_default} alt={data.name}></img>  </div>
 
                 <div className={classes.info}>  <h3>{data.name}</h3>
                     <p></p></div>
