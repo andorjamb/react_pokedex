@@ -13,10 +13,6 @@ const Pokesingle = () => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${params.pokesingle}`)
             .then(res => res.json())
             .then((data) => { setData(data); setIsLoading(false) })
-        /*  .then((data) => { if (data != null) {  } }); */
-
-
-
 
     }, []);
 
@@ -26,25 +22,25 @@ const Pokesingle = () => {
 
             :
             <div className={classes.pokesingle}>
-                <div className={classes.pokesingleImg}> <img src={data.sprites.other['official-artwork'].front_default} alt={data.name}></img>  </div>
+                <div className={classes.container}>
+                    <div className={classes.pokesingleImg}> <img src={data.sprites.other['official-artwork'].front_default} alt={data.name}></img>  </div>
 
-                <div className={classes.info}>  <h3>{data.name}</h3>
-                    <p></p></div>
-                {/* 
-                    name:
-                    id:
-                    height: 
-                    weight:
-                    types -> [{type.name}]
-                    order:
-                    sprites.other[offical-artwork].front_default
+                    <div className={classes.info}>
+                        <table>
+                            <tr>
+                                <th>Name:</th><td>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</td>
+                            </tr>
+                            <tr><th>Id:</th><td>{data.id}</td></tr>
+                            <tr><th>Types</th><td></td></tr>
+                            <tr><th>Weight:</th><td>{data.weight}</td></tr>
+                            <tr><th>Order</th><td>{data.order}</td></tr>
+                        </table></div>
 
- */}
 
+                </div>
             </div>
     );
 
 }
 
 export default Pokesingle;
-/* {`${this.state.data.name.charAt(0).toUpperCase()}${this.state.data.name.slice(1)}` */
