@@ -53,3 +53,22 @@ td {
     text-align: right;
 }
 
+button {
+    font-size: 2rem;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid var(--burnt-orange);
+    position: relative;
+    right: 150px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+tr {
+    height: 2rem;
+}
