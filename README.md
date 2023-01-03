@@ -7,3 +7,10 @@ Built using Reactjs
 
 Completed as coursework at Helsinki Business College.
 
+## Project Screenshot:
+
+
+
+![screenshot](https://github.com/andorjamb/react_pokedex/blob/master/screenshot_pokedex_react.png)
+
+
